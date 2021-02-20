@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: yellow;
+  background: url("./landscape.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
