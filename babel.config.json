@@ -13,6 +13,5 @@
         "runtime": "automatic"
       }
     ]
-  ],
-  "plugins": ["react-refresh/babel"]
+  ]
 }
