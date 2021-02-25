@@ -9,6 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, "../dist"),
     filename: "[name].[contenthash].js",
     publicPath: "",
+    assetModuleFilename: "static/media/[name].[hash:8].[ext]",
   },
   module: {
     rules: [

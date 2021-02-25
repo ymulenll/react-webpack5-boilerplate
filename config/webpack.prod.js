@@ -20,7 +20,11 @@ const prodConfig = {
       name: false,
     },
   },
-  plugins: [new MiniCssExtractPlugin()],
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "static/css/[name].[contenthash:8].css",
+    }),
+  ],
 };
 
 module.exports = merge(common, prodConfig);
