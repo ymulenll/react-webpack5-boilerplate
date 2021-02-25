@@ -10,7 +10,16 @@ const prodConfig = {
     rules: [
       {
         test: /\.(css|scss|sass)$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: "../../",
+            },
+          },
+          "css-loader",
+          "sass-loader",
+        ],
       },
     ],
   },
@@ -23,6 +32,7 @@ const prodConfig = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: "static/css/[name].[contenthash:8].css",
+      chunkFilename: "static/css/[name].[contenthash:8].chunk.css",
     }),
   ],
 };
